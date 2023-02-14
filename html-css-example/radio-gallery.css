@@ -1,0 +1,39 @@
+radio-gallery {
+  display: block;
+  margin: auto;
+  width: min-content;
+  padding: 40px;
+}
+
+radio-gallery > ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 600px;
+}
+
+radio-gallery li {
+  position: relative;
+}
+
+radio-gallery label::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+radio-gallery input {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+  accent-color: #dc7900
+}
